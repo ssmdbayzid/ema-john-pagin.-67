@@ -8,6 +8,18 @@
     gap: 45px;
     margin: 100px 50px;
 }
+
+.pagination button{
+    margin-right: 10px;
+    border: 1px solid goldenrod;
+    color: goldenrod;
+    background-color: white; 
+}
+
+.pagination .selected{
+    background-color: goldenrod;
+    color: white; 
+}
 .cart-container{
     background-color: rgba(255, 153, 0, 0.3);
 }
