@@ -27,6 +27,7 @@ const Shop = () => {
     const handleAddToCart = (selectedProduct) =>{
         console.log(selectedProduct);
         let newCart = [];
+        console.log(selectedProduct);
         const exists = cart.find(product => product.id === selectedProduct.id);
         if(!exists){
             selectedProduct.quantity = 1;
@@ -47,7 +48,7 @@ const Shop = () => {
             <div className="products-container">
                 {
                     products.map(product=><Product 
-                        key={product.id}
+                        key={product._id}
                         product={product}
                         handleAddToCart={handleAddToCart}
                         ></Product>)
